@@ -1,0 +1,35 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    color: #271C16;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --dark-theme-color1 : #271C16;
+}
+  
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    background: rgb(218,215,208);
+    background: radial-gradient(circle, rgba(218,215,208,1) 0%, rgba(178,169,154,1) 100%);
+}
+

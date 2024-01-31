@@ -1,0 +1,103 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:130px;
+    position:fixed;
+    top: 0;
+}
+
+.navbar div{
+    margin: 3rem 2rem;
+}
+
+.logo{
+    width: 5rem;
+}
+
+.listCont{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 50px 0 0 50px;
+    width: 80%;
+
+    @media (max-width: 1000px) {
+        width: 50%;
+    }
+
+    @media (max-width: 500px) {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .phoneNo{
+        display: none;
+    }
+}
+
+.listCont .liItem{
+    padding: 10px 20px;
+    padding-top:12px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight: 400;
+    border-radius: 30px;
+    cursor: pointer;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
+    
+}
+
+
+.menuIcon{
+    padding: 10px 20px; 
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+
+    @media (min-width: 1000px) {
+        display: none;
+    }
+    @media (max-width: 700px) {
+        padding: 5px 10px;
+    }
+}
+
+
+.listCont .liItem:hover{
+    background-color: #271C16;
+    color:white
+}
+
+.contactBtn{
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: #271C16;
+    color: white;
+    border-radius: 5px;
+
+    @media (max-width: 700px) {
+        padding: 5px 20px;
+    }
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
